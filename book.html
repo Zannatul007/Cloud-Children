@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <title>Booking Details</title>
+</head>
+
+<body>
+
+
+
+    <div class="outer-box">
+        <div class="inner-box">
+            <h2 style="text-align: center;">
+                Book With Necessary Information
+            </h2>
+            <form action="" class="form-style">
+                <p>Name<br><input class="holder" type="text" name="bname" id="bname" placeholder="Enter your name"></p>
+                <p>Email<br><input class="holder" type="email" name="bemail" id="bemail" placeholder="Enter your email">
+                </p>
+                <p>Number<input class="holder" type="number" name="bnumber" id="bnumber"
+                        placeholder="Enter your phone number"></p>
+                <p>Adress<input class="holder" type="text" name="baddres" id="baddress"
+                        placeholder="Enter your address">
+                </p>
+                <fieldset>
+                    <legend><b>Choose Your Category</b></legend>
+                    <div class="small-font">
+                        <label for="toddler"><input type="radio" name="category" id="toddler">Toddler</label><br>
+                        <label for="pre-school"><input type="radio" name="category"
+                                id="pre-school">Pre-School</label><br>
+                        <label for="school-age"><input type="radio" name="category"
+                                id="school-age">school-Age</label><br>
+                    </div>
+                </fieldset>
+
+                <div class="special_need">
+                    <h3>
+                        Special Needs</h3>
+                    <small class="small-font">Please let us know if you have any special needs for your children</small>
+
+                    <textarea name="bspecial" id="bspecial" cols="30" rows="10">
+
+                    </textarea>
+                </div>
+
+                <span><button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="reset">Reset</button></span>
+
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Day Care Registration Form</title>
+</head>
+
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <h2 style="text-align: center;">
+                Give Necessary Information About Your Day Care Center
+
+            </h2>
+            <form action="" class="form-style">
+                <p>Name<br><input class="holder" type="text" name="day-name" id="bname" placeholder="Enter your name">
+                </p>
+                <p>Email<br><input class="holder" type="email" name="day-email" id="day-email"
+                        placeholder="Enter your email"></p>
+                <p>Number<br><input class="holder" type="number" name="day-number" id="day-number"
+                        placeholder="Enter your phone number"></p>
+                <p>Adress<br><input class="holder" type="text" name="day-address" id="sday-address"
+                        placeholder="Enter your address">
+                </p>
+                <p>Start Time<br><input class="holder" type="number" name="day-stime" id="day-stime"
+                        placeholder="Enter the start time"></p>
+                <p>End Time<br><input class="holder" type="number" name="day-etime" id="day-etime"
+                        placeholder="Enter the end time">
+                </p>
+
+
+
+
+                <div class="daycare-facilities">
+                    <h1>
+                        Facilities
+                    </h1>
+                    <h3>Food & Nutrition</h3>
+                    <textarea name="food-nutrition" id="food-nutrition" cols="30" rows="10"></textarea>
+                    <h3>Medication,Treatment & Doctor</h3>
+                    <textarea name="medi-treatment-doc" id="medi-treatment-doc" cols="30" rows="10"></textarea>
+                    <h3>Sanitary Kit & Hygiene:</h3>
+                    <textarea name="sankit-hygiene" id="sankit-hygiene" cols="30" rows="10"></textarea>
+                    <h3>Transportation</h3>
+                    <textarea name="transportation" id="transportation" cols="30" rows="10"></textarea>
+                    <h3>Entertainment</h3>
+                    <textarea name="entertainment" id="entertainment" cols="30" rows="10"></textarea>
+
+                </div>
+
+
+                <br>
+                <fieldset>
+                    <legend><b>Choose Your Category</b></legend>
+                    <div class="small-font">
+                        <label for="day-toddler"><input type="radio" name="day-category"
+                                id="day-toddler">Toddler</label><br>
+                        <label for="day-pre-school"><input type="radio" name="day-category"
+                                id="day-pre-school">Pre-School</label><br>
+                        <label for="day-school-age"><input type="radio" name="day-category"
+                                id="day-school-age">school-Age</label><br>
+                    </div>
+                </fieldset>
+                <br>
+                <br>
+                <span><button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="reset">Reset</button></span>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
