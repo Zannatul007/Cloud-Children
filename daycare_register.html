@@ -25,12 +25,40 @@
                         placeholder="Enter your phone number"></p>
                 <p>Adress<br><input class="holder" type="text" name="day-address" id="sday-address"
                         placeholder="Enter your address">
-                </p>
-                <p>Start Time<br><input class="holder" type="number" name="day-stime" id="day-stime"
-                        placeholder="Enter the start time"></p>
-                <p>End Time<br><input class="holder" type="number" name="day-etime" id="day-etime"
-                        placeholder="Enter the end time">
-                </p>
+
+
+                <table>
+                    <tr>
+                        <td class="time">
+                            <p>Start Time<br><input class="holder" type="number" name="day-stime" id="day-stime"
+                                    placeholder="Enter the start time">
+                            </p>
+                        </td>
+                        <td>
+                            <label for="sam"><input type="radio" name="stime" id="sam">AM
+                            </label>
+                            <label for="spm"><input type="radio" name="stime" id="spm">PM</label>
+
+                        </td>
+
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="time">
+                            <p>End Time<br><input class="holder" type="number" name="day-etime" id="day-etime"
+                                    placeholder="Enter the end time">
+                            </p>
+                        </td>
+                        <td>
+                            <label for="eam"><input type="radio" name="etime" id="eam">AM
+                            </label>
+                            <label for="epm"><input type="radio" name="etime" id="epm">PM</label>
+
+                        </td>
+
+                    </tr>
+                </table>
 
 
 
@@ -54,17 +82,35 @@
 
 
                 <br>
-                <fieldset>
-                    <legend><b>Choose Your Category</b></legend>
-                    <div class="small-font">
-                        <label for="day-toddler"><input type="radio" name="day-category"
-                                id="day-toddler">Toddler</label><br>
-                        <label for="day-pre-school"><input type="radio" name="day-category"
-                                id="day-pre-school">Pre-School</label><br>
-                        <label for="day-school-age"><input type="radio" name="day-category"
-                                id="day-school-age">school-Age</label><br>
-                    </div>
-                </fieldset>
+
+                <div class="small-font">
+                    <h3 style="font-size:20px;">Choose your category</h3>
+
+                    <details>
+                        <summary>Toddler</summary>
+                        <textarea name="special-parenting-care" id="special-parenting-care" cols="30"
+                            rows="10"></textarea>
+                        <textarea name="payment-per-hour" id="payment-per-hour" cols="30" rows="10"></textarea>
+
+                    </details>
+                    <details>
+                        <summary>Pre-School</summary>
+                        <textarea name="schooling-teaching" id="schooling-teaching" cols="30" rows="10"></textarea>
+                        <textarea name="payment-per-hour-preschool" id="payment-per-hour-preschool" cols="30"
+                            rows="10"></textarea>
+
+                    </details>
+                    <details>
+                        <summary>School-Age</summary>
+                        <textarea name="advance-teaching" id="advance-teaching" cols="30" rows="10"></textarea>
+                        <textarea name="payment-per-hour-school" id="payment-per-hour-school" cols="30"
+                            rows="10"></textarea>
+
+                    </details>
+                </div>
+
+
+
                 <br>
                 <br>
                 <span><button type="submit" id="submit">Submit</button>

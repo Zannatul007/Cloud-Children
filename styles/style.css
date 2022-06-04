@@ -87,3 +87,12 @@ button {
 .small-font {
     font-weight: 400;
 }
+
+details>summary {
+
+    cursor: pointer;
+}
+
+.time {
+    width: 65%;
+}
