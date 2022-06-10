@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
     <title>Day Care Registration Form</title>
 </head>
 
 <body>
-    <div class="outer-box">
+    <div class="outer-box" style="background-image: url(images/back_img.jpg);">
         <div class="inner-box">
             <h2 style="text-align: center;">
                 Give Necessary Information About Your Day Care Center
@@ -82,32 +86,56 @@
 
 
                 <br>
+                <div class="small-font">
+                    <fieldset>
+                        <legend>
+                            <h3 style="font-size:20px ;">Choose Your ....</h3><b></b>
+                        </legend>
+
+                        <label for="bangladeshi"><input type="radio" name="national-category"
+                                id="bangladeshi">Bangladeshi</label><br>
+                        <label for="foreigner"><input type="radio" name="national-category"
+                                id="foreigner">Foreigner</label><br>
+
+
+                    </fieldset>
+                </div>
+
 
                 <div class="small-font">
-                    <h3 style="font-size:20px;">Choose your category</h3>
+                    <h3 style="font-size:20px ;">Choose your category</h3>
 
                     <details>
                         <summary>Toddler</summary>
+                        <h6>Sprecial Parenting & Care</h6>
                         <textarea name="special-parenting-care" id="special-parenting-care" cols="30"
                             rows="10"></textarea>
+                        <h6>Payment Per Hour</h6>
                         <textarea name="payment-per-hour" id="payment-per-hour" cols="30" rows="10"></textarea>
 
                     </details>
                     <details>
                         <summary>Pre-School</summary>
+                        <h6>Schooling & Teaching</h6>
                         <textarea name="schooling-teaching" id="schooling-teaching" cols="30" rows="10"></textarea>
+                        <h6>Payment Per hour</h6>
                         <textarea name="payment-per-hour-preschool" id="payment-per-hour-preschool" cols="30"
                             rows="10"></textarea>
 
                     </details>
                     <details>
                         <summary>School-Age</summary>
+                        <h6>Advance Teaching(Tution, Homework and Library Facilities)</h6>
                         <textarea name="advance-teaching" id="advance-teaching" cols="30" rows="10"></textarea>
+                        <h6>Payment Per hour</h6>
                         <textarea name="payment-per-hour-school" id="payment-per-hour-school" cols="30"
                             rows="10"></textarea>
 
                     </details>
                 </div>
+
+
+
 
 
 

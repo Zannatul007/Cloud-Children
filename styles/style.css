@@ -1,7 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
 
-
 }
 
 h2 {
@@ -21,10 +20,11 @@ h3 {
 
 
 .outer-box {
-
-    background-image: linear-gradient(blue, cyan);
+    left: 0;
+    top: 0;
+    width: 100%;
     height: 100%;
-    background-size: cover;
+    background-repeat: repeat;
     border-radius: 2.5%;
     box-shadow: 10px 40px 30px gray;
 }
@@ -46,7 +46,6 @@ textarea {
 
 .inner-box {
 
-
     border-radius: 5%;
     padding: 5%;
     margin: auto;
@@ -59,7 +58,8 @@ textarea {
 
 }
 
-.holder {
+.holder,
+select {
     width: 100%;
     height: 30px;
     border: none;
@@ -69,7 +69,7 @@ textarea {
 }
 
 .holder:hover,
-textarea:hover {
+textarea:hover select:hover {
     border: 1px solid blue;
 }
 
@@ -95,4 +95,10 @@ details>summary {
 
 .time {
     width: 65%;
+}
+
+h6 {
+    padding: 0px;
+    margin-bottom: 0px;
+
 }
