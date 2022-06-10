@@ -69,7 +69,8 @@ select {
 }
 
 .holder:hover,
-textarea:hover select:hover {
+textarea:hover,
+select:hover {
     border: 1px solid blue;
 }
 
